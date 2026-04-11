@@ -32,7 +32,7 @@ function App() {
     setResult(null);
 
     try {
-      const response = await axios.post('https://00l4o.app.super.myninja.ai/analyze', {
+      const response = await axios.post('/analyze', {
         scenario: scenario.trim(),
         state: 'Missouri',
       }, { timeout: 60000 });
